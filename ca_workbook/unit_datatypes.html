@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Update title -->
+
+    <title>Data Types and Variables  </title>
+  </head>
+  <body>
+    <table class="center">
+
+      <tr>
+
+        <td>
+          <h1>Data Types and Variables</h1>
+
+          <!-- Your main content here -->
+        <p>When you write programs, you use data types to classify data. Data types tell the computer how to handle the data in your program. They also determine what you can do with the data, including which operations you can perform.</p>
+        <p>Data Types is the collective term or phrase used when describing types or formats of computer information.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <div class="div1">
+          <div class="div1 fancy_container">
+            <b class="fancy">Learning Outcomes</b>
+          </div>
+          <p class="handwriting">On successful completion of this Unit students will be able to,</p>
+          <ol class="handwriting">
+            <li>Understand what datatypes are</li>
+            <li>Understand what variables are</li>
+
+          </ol>
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>
+
+        <h4> Strings (Data Type)</h4>
+
+        <p>A string is just text data.<p>
+        <p>The visual representation of an individual letter or number is called a character.
+        A is a character, x is a character, 7 is a character, & is a character, / is also a character.
+        String is the term used to describe a sequence of characters.</p>
+
+        <p>A string is any text inside quotation marks.<br>
+        <pre>"Hello World, this is a string"<br>'This is also a string'<br>"The temperature today is 23 degrees!"<br>"my_email@yahoo.com"</pre>
+        The above are all strings. Strings are just text data.<br>
+        Identify snake_case vs CamelCase </p>
+
+        <pre>'23'<br>"40"<br>"345435"</pre>
+        <p>These are also strings and not numbers. They are the visual text representation and not really a computer number. Number data is written differently<br>
+
+
+        <h4>Numbers (Data Type)</h4>
+
+        <p>To specifiy real number data in code, you just write the number without quotes.</p>
+        <ul>
+        <li>123 This is a number</li>
+        <li>23.5 and this</li>
+        <li>This also 3487569378543856 </li>
+      </ul>
+        <p>The computer interprets this code as digital computerised numbers.
+        The computer can only perform math calculations with digital numbers.</p>
+
+        <p>These two lines are not the same.</p>
+        <ul>
+          <li>45  Digitised computer number that computer understands</li>
+          <li>"45"  Text / picture representation that is only used for display purposes.</li>
+        </ul>
+
+        <p>If a number is a whole number with no decimal point, it is called an integer.</p>
+        <p>If a number has a decimal point it is called a float.</p>
+        <p>This is because inside the computer those two types of numbers are digitised and represented differently. Inside your computer is different microchip circuitry to work with each type of number. But you don't need to think about this at the moment.</p>
+        <ul>
+        <li>12 This is an integer.</li>
+        <li>12.5 This is a float.</li>
+        </ul>
+
+
+        <h4> Booleans (Data Type) </h4>
+
+        <p>A boolean is a special type of information used to represent one of two possible states.</p>
+        <ul>
+        <li>We call these two states True and False. You could also think of the two states as
+        <li>on or off, yes and no and 1 or 0. Booleans are extreamly useful and important because we can use them to represent a decision or fact that we can then act on later.</li>
+        </ul>
+        <p>This is how we write a boolean.<p>
+        <ul>
+        <li>true</li>
+        <li>false</li>
+        </ul>
+        <p>Ruby will interpret those two lines to mean this special type of data / information.</p>
+
+
+        <h4> Variables </h4>
+
+        <p>When programming and writing code we need the computer to remember lots of small bits of information. Information like, user input, settings, some text or lists of things.
+        In code we use variables to store these bits of information so we can re-use and manipulate the information in order to create a meaningful program.</p>
+
+        <p>Variables are named. They can have any name you choose, but you should choose a meaningful name.</p>
+        <ul>
+        <li>this_is_a_variable = "it is set to this text (called a string)"</li>
+        </ul>
+        <p>Variables are like a label and a bucket for holding your information. Variables hold information. They can be set to things and even be changed again. You need a variable to temporarily save information so you use it again later.</p>
+        <p>When you define a variable, you are designating a small peice of short computer memory to hold your information. But this does not happen until you run / execute your Ruby code. </p>
+
+        <p>Variable examples:</p>
+        <pre>my_dogs_name = "lucky"<br>my_favourite_food = "chips"<br>my_shirt_colour = "red"<br>this_variable_is_set_to_a_number = 12345<br>number_of_dogs_i_have = 2<br>number_of_times_i_have_been_to_dreamworld = 3<br>temperature_today = 23.5<br>my_eyes_are_blue = false<br>my_cat_has_legs = true<br>coding_is_cool = true<br>sponge_bob_is_funny = false</pre>
+
+        <p>The above code follows the format:</p>
+        <pre>variable_name = value</strong></pre>
+
+        <p>We can give a variable any name we want. Usually we choose a name that is meaningful to us. The name actually means nothing to the computer.
+<br><pre>i_can_give_my_variable_any_name_i_want = 398543074545630</pre></p>
+
+        <p>When we set a variable to a value we call that assignment.
+        We assign a value to a variable.</p>
+
+        <p>We can re-assign variables to a new value.</p>
+        <pre>temperature_today = 23.3<br>temperature_today = 30.6</pre>
+        </ul>
+        <p>We changed the value. When the code / program is run the old value will be overwritten and lost forever.</p>
+        <h4>Expressions: Interpolation</h4>
+          <p>There is another way to join strings.</p>
+          <pre>my_name = "Bob"<br>"Hello #{my_name} how are you?"</pre>
+        <p>Notice the #{} symbols. That means everything inside will be an expression. The result of that line after evaluation will be the string: "Hello Bob how are you?"</p>
+
+        <p>Variables can store all kinds of computer information that we can further manipulate.<br>
+        NOTE: The = sign is called the assignment operator. Operators are the small symbols we use in our code.</p>
+
+
+        <h3> Working with Numbers </h3>
+        <p> In order to start IRB open your terminal and type IRB, then hit the return key (enter). In order to quit IRB again (and get back to your system shell prompt) you can type exit or press ctrl-d, which does the same.</p>
+
+          <h1>Challenge</h1>
+
+      <ol>
+        <li><p>In IRB, calculate:</p>
+          <ul>
+            <li>How many hours are in a year.</li>
+            <li>How many minutes are in a decade?</li>
+            <li>How many seconds old are you?</li>
+          </ul>
+          </li>
+          <li><p>What do you think happens when you combine the following floats and integers?</p>
+          <p>Try computing these in IRB:</p>
+          <p>Is the result a float or an integer?</p>
+          <ul>
+          <li> 3.0 / 2</li>
+          <li>3 / 2.0</li>
+          <li>4 ** 2.0</li>
+          <li>4.1 % 2</li>
+          </ul>
+          <p> Why is 4.1 % 2 => 0.099.
+            <a href ="https://ruby-doc.org/core-2.2.0/Float.html#method-i-25">Look up in the ruby docs</a> or google modulo </p>
+
+          </li>
+          <li>Put "Hello world!" onto the screen</li>
+          <li>Make a new variable called 'name', set it's value to your name (as a string)</li>
+        </ol>
+
+            <h4>Beast Mode</h4>
+
+            <ol>
+              <li>Use interpolation to put your name on the screen</li>
+              <li>Make a new variable called 'siblings', set it's value to the number of siblings you have (integer)</li>
+              <li>Use code to put your number of siblings on the screen.</li>
+              <li>Use interpolation to pretty it up, E.g.: “Total Siblings: 3”</li>
+              <li>Use code to increase your number of siblings by one.</li>
+              <li>Use interpolation again to put your new number of siblings on the screen</li>
+            </ol>
+          </p>
+
+        </td>
+      </tr>
+
+    </table>
+  </body>
+</html>

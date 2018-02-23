@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Update title -->
+
+    <title>Hashes - </title>
+  </head>
+  <body>
+    <table class="center">
+      <tr>
+        <td>
+          <h1>Hashes</h1>
+
+          <!-- Your main content here -->
+          As stated in Ruby , a poignant guide: A hash is a dictionary surrounded by curly braces. Dictionaries match words with their definitions. This time, the curly braces represent little book symbols. See how they look like little, open books with creases down the middle? They represent opening and closing our dictionary. Imagine our dictionary has a definition on each of its pages. <br>
+          <br><strong>Hashes</strong>
+
+          <br>Hashes are denoted with curly braces: <br>
+          <br>hash = {&#39;color&#39; =&gt; &#39;green&#39;, &#39;number&#39; =&gt; 5}
+          <br>hash.keys =&gt; [&#39;color&#39;, &#39;number&#39;]
+
+          hash.values =&gt; [&#39;green&#39;, 5]
+            <br>Hashes can be quickly looked up by key: hash[&#39;color&#39;] #=&gt; &#39;green&#39; hash[&#39;number&#39;] =&gt; 5<br>
+
+          <br>Asking a hash for a key that doesn&#39;t exist returns nil: hash[&#39;missing&#39;] =&gt; nil </p>
+
+          Since Ruby 1.9, there&#39;s a special syntax when using symbols as keys:
+          <br>new_hash = { item: 3, action: true}
+          <br>new_hash.keys =>; [:item, :action]
+
+          <p>&nbsp;</p>
+          <br>
+
+            <br><h3>Challenge</h3>
+            <pre>person = {name: 'John', height: '2m', weight: '70kgs'}</pre>
+
+            <p> Use the <a href = "http://ruby-doc.org/core-2.2.0/Hash.html">Ruby docs to help you</a>
+          <ul>
+            <li> Add Key value pairs to the hash:
+            <br> John's occupation (web developer) and hobbies (art). </li>
+            <li> Delete John's weight from the hash </li>
+            <li> Retrieve John's height from the hash</li>
+            <li> Iterate through the hash so we see John's details. </li>
+          </ul>
+
+            <br><h3>Beast Mode</h3>
+            <p>Using some of Ruby's built-in&nbsp;<a href="http://www.ruby-doc.org/core-2.1.0/Hash.html">Hash methods</a>, write a program that loops through a new hash and prints all of the keys.
+            <br><img src="unit_hashes/kayne keys.gif" alt="keys example"><br><br>
+
+
+            <br>Then write a program that does the same thing except printing the values.
+            <br>Finally, write a program that prints both.</p>
+
+            <p><span >**Challenge #2**<br />
+            A group of friends have just finished lunch. Write an app to work out how much each person owes.</span></p>
+
+            <p><span >Parameters:<br />
+            - Your app should ask &quot;Enter a customer&#39;s name&quot;<br />
+            - Your first line of code is:<br />
+            items = [{ customer: &quot;John&quot;, item: &quot;Soup&quot;, cost: 8.50}, {customer: &quot;Sarah&quot;, item: &quot;Pasta&quot;, cost: 12}, {customer: &quot;John&quot;, item: &quot;Coke&quot;, cost: 2.50}]<br />
+            - Your app should output, for example: &quot;John owes $11.0&quot;</span></p>
+
+            <p><span >Bonus:<br />
+            1. Format your total so it always shows two deciaml places, e.g. $11.00<br />
+            2. We&#39;re repeating names in each item. Can you think of a more elegant way to structure the items? Implement your solution.<br />
+            3. The list of items makes our code messy. Instead, see if you can read the items from a file. (Google will help here!)<br />
+            4. Allow items to be added to the list. E.g. &quot;Press 1 to add items, press 2 to work out a total&quot;.<br />
+            5. Store these new items to the file.</span></p>
+
+            <br><h3>Beast Mode ++ </h3>
+            Create a ruby application that requests the name of a classmate, and displays their birthday and your birthday. Use at least one Hash and one Array in the solution.</span></p>
+
+            <p><span >Bonus:<br />
+            1. Display the number of days between your birthdays.<br />
+            1. Create a method to display their star sign based on their birthday.<br />
+            2. Someone&#39;s probably already coded this date to star sign functionality - replace your method with a gem</span></p>
+            <p>&nbsp;</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="div1">
+            <div class="div1 fancy_container">
+              <b class="fancy">Learning Outcomes</b>
+            </div>
+            <p class="handwriting">On successful completion of this Unit students will be able to,</p>
+            <ol class="handwriting">
+              <li>Understand what is a hash</li>
+              <li>Get and set values for specific hash key and values</li>
+            </ol>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

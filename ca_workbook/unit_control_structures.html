@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Update title -->
+
+    <title>Control Structures</title>
+  </head>
+  <body>
+    <table class="center">
+      <tr>
+        <td>
+          <h1>Conditionals and flow</h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="div1">
+            <div class="div1 fancy_container">
+              <b class="fancy">Learning Outcomes</b>
+            </div>
+            <p class="handwriting">On successful completion of this Unit students will be able to,</p>
+            <ol class="handwriting">
+              <li>Define control flow for when a Ruby program is executed.</li>
+              <li>Implement control flow in different ways.</li>
+              <li>Use if, else, and elsif statements.</li>
+            </ol>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <!-- Your main content here -->
+          <br>There are a number of ways to tell your program to conditionally execute certain code, the basic forms of which are:
+          <ol>
+            <li>if, else, and elsif statements,</li>
+            <li>case statements and </li>
+            <li>loops.</li>
+          </ol>
+          <br>
+          <strong>if Statements</strong><br>
+          One of the most common ways to enact control flow is the if statement. Whatever block of code that follows the if statement will get evaluated—i.e. read and enacted by the computer. If this evaluation of the if statement results in true, then the code through to the associated end statement will run.<br>
+          <br><strong>else Statements</strong><br>
+          An else statement sets a "default" condition for when your if statement's conditional evaluates as false. Every condition that doesn't evaluate as true will instead pass through the else statement.<br>
+          <br><strong>elsif Statements</strong><br>
+          Sometimes, we want to control the flow of our program based on more than one condition. For example, if I am hungry, then I will get a snack. If I am thirsty, then I will get a drink of water. Otherwise, I will stay here and continue learning more about control flow.<br>
+          <br><strong>while and until</strong><br>
+          A while block denotes a section of code that is to be repeated over and over while the expression is satisfied. For example once x is 10 or over the loop ends. Until provides the opposite functionality, looping until a certain condition is met.<br>
+
+          <br>Read <a href=https://www.tutorialspoint.com/ruby/ruby_if_else.htm>Ruby - if...else, case, unless </a><br>
+
+          <h2>Challenge</h2>
+          <ol>
+            <li>Ask for the user’s age. If they are > 18 years old, say “Welcome to the casino!”. Otherwise say “Sorry, you’re too young”.</li>
+            <li>Using if/elsif/else, expand on the last point and say “Sweet sixteen!” if they’re exactly 16.</li>
+          </ol>
+
+          <h2>Beast Mode</h2>
+          Using only the content we've covered today (i.e. no hashes, no arrays, no classes - keep it simple :) ), build a banking app.<br><br>
+          <ol>
+            <li>The initial balance should be 0. Show this on screen when the app runs. E.g:
+            <pre>Your balance is $0</li>
+            <li>Use puts to display a nice welcome message. E.g:
+              <pre>Welcome to the banking app<br>Your balance is $0</pre></li>
+            <li>Let the user determine the output. Ask them what they would like to do. If they type balance and hit return, show them their balance! Currently the only option is balance. E.g:
+              <pre>Welcome to the banking app<br>What would you like to do? (options: balance)<br>*user types balance*<br>Your balance is $0</pre>
+            </li>
+            <li>If the user types anything other than balance, say "Invalid selection!"
+              <pre>Welcome to the banking app<br>What would you like to do? (options: balance)<br>*user types kanye*<br>Invalid selection!</pre>
+            </li>
+            <li>Ask the user for a password before proceeding.</li>
+          </ol>
+
+          <h2>Beast Mode++</h2>
+          <ol>
+            <li>Add 'deposit' as an option. If they select it, ask 'how much would you like to deposit?'. Update the balance and show it back to the user.</li>
+            <li>Wrap the program in a loop so the user can view balance and then deposit over and over.</li>
+            <li>The screen's looking pretty ugly, figure out how to clear the screen between loops.</li>
+            <li>Implement a withdraw feature. Make sure they can't withdraw more than their total balance.</li>
+            <li>Research arrays. Store each transaction in an array and then implement a 'history' option.</li>
+            <li>Restarting the app sets the balance to $0. Research reading/writing files. Store the balance in a text file so it persists.</li>
+            <li>Research hashes. Store multiple user balances and histories in a hash.</li>
+          </ol>
+        </td>
+      </tr>
+
+    </table>
+  </body>
+</html>
